@@ -23,3 +23,38 @@
 .bg-facebook {
   background: #3b5998;
 }
+
+.text-legend {
+  font-size: 12px;
+}
+
+.waiting-page1 {
+  background: #EEF0EA;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+}
+
+.waiting-page2 {
+  background: #335057;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  p {
+    color: white;
+  }
+}
+
+html, body {
+  height: 100%;
+}
