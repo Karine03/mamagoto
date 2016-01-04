@@ -38,6 +38,14 @@
     width: 300px;
     margin-bottom: 20px;
   }
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  .btn {
+    background: #315056;
+    color: white;
+  }
 }
 
 .waiting-page2 {
@@ -52,6 +60,14 @@
   }
   p {
     color: white;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  .btn {
+    background: white;
+    color: #315056;
   }
 }
 
