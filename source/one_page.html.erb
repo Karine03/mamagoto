@@ -1,0 +1,124 @@
+<%= partial "navbar" %>
+<div class="banner" id="screen1" style="background-image: url('<%= image_path('banner/banner8.jpg')%>');">
+	
+	<%= image_tag "logo.svg", class: "img-responsive" %>
+	<div class="arrow-container fadeInArrow">
+	  <a href="#banner-2">
+	    <i class="fa fa-angle-down scroll-btn"></i>
+	  </a>
+	</div>
+</div>
+
+<div class="banner banner-cuisine" id="banner-2" style="background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), url('<%= image_path('banner/banner2.jpg')%>');">
+	<div class="banner-content">
+		<h2>La “dinette” japonaise</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			<br> 
+			Rem mollitia repellat facere placeat, quae expedita culpa beatae reprehenderit perferendis consequatur voluptatibus neque eius ad exercitationem asperiores doloribus, quod modi! Odit.
+		</p>
+	</div>
+	<div class="arrow-container fadeInArrow">
+	  <a href="#banner-3">
+	    <i class="fa fa-angle-down scroll-btn"></i>
+	  </a>
+	</div>
+</div>
+
+<div class="banner banner-resto" id="banner-3" style="background-image: url('<%= image_path('banner/banner9.jpg')%>');">
+	<div class="banner-content text-right">
+
+		<h2>L'histoire de Mamagoto</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			<br> 
+			Rem mollitia repellat facere placeat, quae expedita culpa beatae reprehenderit perferendis consequatur voluptatibus neque eius ad exercitationem asperiores doloribus, quod modi! Odit.
+		</p>
+	</div>
+	<div class="arrow-container fadeInArrow">
+	  <a href="#gallery">
+	    <i class="fa fa-angle-down scroll-btn"></i>
+	  </a>
+	</div>
+</div>
+
+<div class="photo-gallery padded" id="gallery">
+	<div class="container">
+		<div class="pictures">
+			<% data.pictures.each do |pic| %>
+				<div class="picture-card" id ="<%= pic.id %>" style="background-image: url('<%= image_path("#{pic.url}")%>');">
+					<a href="#" class="modal-link" data-toggle="modal" data-target="#modal-img"></a>
+				</div>
+			<% end %>
+		</div>
+	</div>
+</div>
+
+<div id="modal-img" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-imgLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+				<%= image_tag "", id:"image-src", alt: "Mamagoto", class:"img-responsive" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="reservation-container text-center padded">
+	<a href="#" class="modal-resa btn-resa" data-toggle="modal" data-target="#modal-resa">Réservez une table</a>
+
+	<div id="modal-resa" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-imgLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-body">
+					<iframe src="http://lareserve.io/restaurants/39/bookings/new_web" width="650" height="550" frameborder="0"></iframe>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</div> 
+
+<div class="map-container hidden-xs">
+	<div id="map" style="width: 100%; height: 80vh;">
+	</div>
+	<div class="map-info text-center">
+		<%= image_tag "logo.svg" %>
+		<h2>Contact</h2>
+		<p>
+		  5 Rue des Petits Hôtels <br>
+		  75010 Paris <br>
+		  01 44 79 03 98
+		</p>
+	</div>
+</div>
+
+<div class="footer text-center">
+	<div class="socials">
+		<a href="https://www.facebook.com/mamagotoparis/?fref=ts"> <i class="fa fa-facebook"></i> </a>
+		<a href="https://www.instagram.com/mamagotoparis/"> <i class="fa fa-instagram"></i> </a>
+	</div>
+	<p>©2016 MAMAGOTO · Design and web development by <a href="http://www.blbrd.com">BLBRD</a></p>
+</div>
+
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script type="text/javascript">
+var myLatlng = new google.maps.LatLng(48.8771396,2.3544425000000047);
+
+var myOptions = {
+  zoom: 16,
+  center: myLatlng,
+  scrollwheel: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP,
+  styles: [{"featureType":"landscape","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"stylers":[{"hue":"#00aaff"},{"saturation":-100},{"gamma":2.15},{"lightness":12}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"lightness":24}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":57}]}] // TODO: replace [] by array from https://snazzymaps.com/
+};
+
+var map = new google.maps.Map(document.getElementById('map'), myOptions);
+var marker = new google.maps.Marker({
+  position: myLatlng,
+  map: map,
+  // icon: "<%= image_tag 'pin.svg' %>",
+  title: "You are here!"
+});
+</script>

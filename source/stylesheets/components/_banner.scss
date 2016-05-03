@@ -1,0 +1,29 @@
+.banner {
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	img {
+		width: 200px;
+	}
+}
+
+.banner-cuisine {
+	padding: 0px 100px;
+	justify-content: flex-start;
+}
+
+.banner-content {
+	color: white;
+	flex: 0 0 400px;
+	h2 {
+		font-family: $my-font;
+	}
+}
+
+.banner-resto {
+	padding: 0px 100px;
+	justify-content: flex-end;
+}

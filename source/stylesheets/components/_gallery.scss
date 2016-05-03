@@ -1,0 +1,34 @@
+.pictures {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.picture-card {
+	flex: 0 0 30%;
+	height: 25vw;
+	background-size: cover;	
+	background-position: center center;
+	margin: 8px;
+	position: relative;
+}
+
+.modal-link {
+	position: absolute;
+	top: 0;
+	bottom:0;
+	right:0;
+	left: 0;
+	&:hover {
+		background: black;
+		opacity: 0.3;
+	}
+}
+
+#modal-img {
+	img {
+		width: 100%;
+		margin: auto;
+	}
+}

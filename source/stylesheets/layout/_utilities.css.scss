@@ -6,9 +6,10 @@
 
 // Paddings
 .padded {
-  padding-top: 5em;
-  padding-bottom: 5em;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
+
 
 // Backgrounds
 .bg-text {
@@ -27,6 +28,17 @@
 .text-legend {
   font-size: 12px;
 }
+
+
+a {
+  text-decoration: none;
+  &:hover, &:focus {
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+
 
 .waiting-page1 {
   background: #FAFAFA;

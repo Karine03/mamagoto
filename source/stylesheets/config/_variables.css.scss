@@ -2,19 +2,18 @@
  * Fonts
  * ------------------------------------- */
 // Google fonts
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Lato:400,100,300,700,500");
 $base-font: "Open Sans", "Helvetica", "sans-serif";
-$header-font: "Raleway", "Helvetica", "sans-serif";
+$header-font: "Lato", "Helvetica", "sans-serif";
 
 // Local fonts (uncomment following lines)
-// @font-face {
-//   font-family: "Font Name";
-//   src: font-url('FontFile.eot');
-//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
-//        font-url('FontFile.woff') format('woff'),
-//        font-url('FontFile.ttf') format('truetype')
-// }
-// $my-font: "Font Name";
+@font-face {
+  font-family: "Proxima";
+  src: font-url('ProximaNovaSoft-Bold-webfont.eot');
+  src: font-url('ProximaNovaSoft-Bold-webfont.woff') format('woff'),
+       font-url('ProximaNovaSoft-Bold-webfont.ttf') format('truetype')
+}
+$my-font: "Proxima";
 
 // Font-size and line-height
 $base-size: 16px;
@@ -24,6 +23,10 @@ $base-height: 1.4;
  * Colors
  * ------------------------------------- */
 // Scheme
+
+
+$mamagoto_blue: #294C6F;
+
 $brand-color: #D23333;
 
 $red: #EE5F5B;

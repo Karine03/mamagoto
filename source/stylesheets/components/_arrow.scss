@@ -1,0 +1,32 @@
+.scroll-btn {
+  position: absolute;
+  width: 100px;
+  margin-left: -50px;
+  bottom: 20px;
+  left: 50%;
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  z-index: 3;
+}
+
+@media only screen and (max-width: 768px) {
+  .scroll-btn {
+    color: transparent;
+  }
+}
+
+.fadeInArrow{
+  animation: fadeInArrow 0.5s 0.5s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInArrow {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.6;
+  }
+}
