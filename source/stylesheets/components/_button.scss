@@ -15,13 +15,11 @@
 .btn-resa {
 	padding: 10px 20px;
 	border-radius: 3px;
-	background: $mamagoto-blue;
-	color: white;
-	border: 2px solid white;
+	background: white;
+	color: $mamagoto-blue;
 	font-family: $my-font;
 	&:hover {
-		background: white;
-		color: $mamagoto-blue;
+		color: white;
 	}
 	&:focus {
 		color: white;

@@ -2,16 +2,17 @@
 	position: absolute;
 	z-index: 3;
 	top: 60px;
-	left: 190px;
+	left: 130px;
 	background: white;
-	padding: 60px 20px;
+	padding: 50px 20px;
 	border-radius: 4px;
 	h2 {
 		font-family: $my-font;
-		font-size: 24px;
+		font-size: 19px;
+		margin-bottom: 0;
 	}
 	img {
-		width: 150px;
+		width: 100px;
 	}
 }
 
