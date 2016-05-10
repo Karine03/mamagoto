@@ -1,18 +1,18 @@
 - url: gallery/gallery1.jpg
   id: 1
-- url: gallery/gallery2.jpg
-  id: 2
 - url: gallery/gallery3.jpg
   id: 3
+- url: gallery/gallery2.jpg
+  id: 2
+- url: gallery/gallery8.jpg
+  id: 8
+- url: gallery/gallery10.jpg
+  id: 10
+- url: gallery/gallery9.jpg
+  id: 9
 - url: gallery/gallery4.jpg
   id: 4
 - url: gallery/gallery5.jpg
   id: 5
 - url: gallery/gallery7.jpg
   id: 7
-- url: gallery/gallery8.jpg
-  id: 8
-- url: gallery/gallery9.jpg
-  id: 9
-- url: gallery/gallery10.jpg
-  id: 9
