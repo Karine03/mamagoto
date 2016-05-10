@@ -6,7 +6,13 @@
 	background: white;
 	padding: 50px 20px;
 	border-radius: 4px;
-	h2 {
+}
+.map-container {
+	position: relative;
+}
+
+.map-info, .contact-info {
+	h2{
 		font-family: $my-font;
 		font-size: 19px;
 		margin-bottom: 0;
@@ -16,6 +22,12 @@
 	}
 }
 
-.map-container {
-	position: relative;
+.contact-container {
+	background: #eeeeee;
+	padding: 20px 0;
+}
+.contact-info {
+	padding: 20px 0;
+	background: white;
+	border-radius: 4px;
 }

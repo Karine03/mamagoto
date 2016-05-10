@@ -1,5 +1,6 @@
 .banner {
 	background-size: cover;
+	background-position: center center;
 	height: 100vh;
 	position: relative;
 	display: flex;
@@ -11,19 +12,32 @@
 }
 
 .banner-cuisine {
-	padding: 0px 100px;
 	justify-content: flex-start;
 }
 
 .banner-content {
 	color: white;
-	flex: 0 0 400px;
+	width: 60%;
 	h2 {
 		font-family: $my-font;
+	}
+	@media (max-width: $screen-sm) {
+		width: 85%;
+	}
+	@media (max-width: $screen-xs) {
+		text-align: center;
+		width: 100%;
 	}
 }
 
 .banner-resto {
-	padding: 0px 100px;
 	justify-content: flex-end;
+	background-position: center right;
+	.banner-content {
+		float: right;
+		text-align: right;
+		@media (max-width: $screen-xs) {
+			text-align: center;
+		}
+	}
 }
