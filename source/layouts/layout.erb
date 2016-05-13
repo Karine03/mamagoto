@@ -11,8 +11,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
+    <title><%= current_page.data.title || "Mamagato Restaurant" %></title>
+    <meta name="description" content="Mamagoto, la “dinette” japonaise, joue au bistrot de quartier pour le déjeuner, et au bar à manger le soir où les convives viennent partager leurs assiettes">
+    
+    <meta property="og:title" content='Restaurant Mamagoto, la "dinette" japonaise.'>
+    <meta property="og:image" content="images/banner1.jpg">
+    <meta property="og:description" content="Mamagoto, la “dinette” japonaise, joue au bistrot de quartier pour le déjeuner, et au bar à manger le soir où les convives viennent partager leurs assiettes">
+    <meta property="og:site_name" content="Mamagoto Restaurant"/>
+
 
     <%= stylesheet_link_tag "all" %>
     <%= javascript_include_tag  "all" %>
