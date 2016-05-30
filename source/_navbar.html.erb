@@ -8,9 +8,47 @@
 			<%= link_to "Le restaurant", "#banner-3",class: "hvr-overline-reveal" %>
 			<%= link_to "Photos", "#gallery",class: "hvr-overline-reveal" %>
 			<a href="mailto:mamagotoparis@gmail.com" class="hvr-overline-reveal">Contact</a>
+			<%= link_to "Localisation", "#map"%>
 			<a href="#" class="btn-navbar hvr-hollow" data-toggle="modal" data-target="#modal-resa">Réserver</a>
 		</div>
-		<div class="navbar-dropdown visible-xs">
+		<div class="button visible-xs">
+		  <a class="btn-open" href="#"></a>
+		</div>
+
+		
+		<div class="overlay">
+		  <div class="wrap text-center">
+		    <ul class="wrap-nav">
+		      <li>
+		      	<%= link_to "La cuisine", "#banner-2", class: "nav-xs-link"%>
+		      </li>
+		      <hr>
+		      <li>
+		      	<%= link_to "Le restaurant", "#banner-3", class: "nav-xs-link"%>
+		      </li>
+		      <hr>
+		      <li>
+		      	<%= link_to "Photos", "#gallery", class: "nav-xs-link"%>
+		      </li>
+		      <hr>
+		      <li>
+		      	<a href="mailto:mamagotoparis@gmail.com">Contact</a>
+		      </li>
+		      <hr>
+		      <li>
+		      	<%= link_to "Localisation", "#contact", class: "nav-xs-link"%>
+		      </li>
+		      <hr>
+		      <li>
+		      	<a href="#" class="btn-navbar hvr-hollow nav-xs-link" data-toggle="modal" data-target="#modal-resa">Réserver</a>
+		      </li> 
+		    </ul>
+		  </div>
+		</div>
+
+
+
+<!-- 		<div class="navbar-dropdown visible-xs">
 			<i class="fa fa-bars dropdown-toggle" id="menu-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></i>
 		  <ul class="dropdown-menu" aria-labelledby="menu-dropdown">
 		    <li>
@@ -27,10 +65,9 @@
 		    </li>
 		    <li>
 		    	<a href="#" class="btn-navbar hvr-hollow" data-toggle="modal" data-target="#modal-resa">Réserver</a>
-		    </li>
-		    	    
+		    </li>      
 		  </ul>
-		</div>
+		</div> -->
 
 	</div>
 </div>
