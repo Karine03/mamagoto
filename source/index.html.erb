@@ -73,6 +73,19 @@ title: Restaurant Mamagoto, 5 rue des Petits Hôtel - Paris 10ème
   </div>
 </div>
 
+<div class="text-center padded" id="press">
+  <h2>Ils parlent de nous</h2>
+  <div class="press-logos">
+    <% data.press.each do |logo| %>
+      <% link_to logo.url, target: "_blank" do %>
+        <div class="press-logo">
+          <%= image_tag logo.img %>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div> 
+
 <div id="modal-img" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-imgLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -142,3 +155,15 @@ title: Restaurant Mamagoto, 5 rue des Petits Hôtel - Paris 10ème
     title: "You are here!"
   });
 </script>
+
+
+<div id="modal-event" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-imgLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <%= image_tag "event.jpg", class:"img-responsive" %>
+      </div>
+    </div>
+  </div>
+</div>
+

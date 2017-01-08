@@ -4,3 +4,36 @@
 		box-shadow: inset 0 0 0 2px white, 0 0 1px transparent;
 	}
 }
+
+.photo-gallery {
+  background-color: $gray-lighter;
+}
+
+#press {
+  padding-left: 30px;
+  padding-right: 30px;
+  h2 {
+    color:$mamagoto_blue; 
+  }
+  .press-logos {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    a {
+      opacity: 0.4;
+      cursor: pointer;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  .press-logo {
+    img {
+      width: 100px;
+      
+    }
+    margin: 20px 30px;
+  }
+}
