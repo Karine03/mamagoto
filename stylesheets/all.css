@@ -9449,7 +9449,7 @@ html, body {
       height: 25px; }
     /* line 17, /Users/karinebialobroda/code/Karine03/mamagoto/source/stylesheets/components/_nav.scss */
     #navbar .navbar-container-right {
-      flex: 0 0 550px;
+      flex: 0 0 650px;
       display: flex;
       justify-content: space-between;
       align-items: center; }
