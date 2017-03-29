@@ -1,4 +1,4 @@
 
-$(document).ready(function() {
-  $("#modal-event").modal('show');
-});
+// $(document).ready(function() {
+//   $("#modal-event").modal('show');
+// });

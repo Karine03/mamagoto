@@ -12673,9 +12673,9 @@ $(document).ready(function(){
 	});
 });
 
-$(document).ready(function() {
-  $("#modal-event").modal('show');
-});
+// $(document).ready(function() {
+//   $("#modal-event").modal('show');
+// });
 
 $(document).ready(function() {
 	$(document).on("click", ".modal-link", function() {
