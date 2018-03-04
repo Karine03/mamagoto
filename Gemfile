@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 
 gem "middleman", "~> 3.3.10"
 
+gem 'json', github: 'flori/json', branch: 'v1.8'
+
 # # Live-reloading plugin
 # gem "middleman-livereload", "~> 3.1.0"
 

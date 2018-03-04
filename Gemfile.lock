@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/flori/json.git
+  revision: 7f4cfd853f2c919d854fb95548a19980feff17e8
+  branch: v1.8
+  specs:
+    json (1.8.6)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -134,9 +141,10 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3.1)
   font-awesome-sass (~> 4.2.0)
   jquery-middleman
+  json!
   middleman (~> 3.3.10)
   middleman-autoprefixer
   middleman-deploy (~> 1.0)
 
 BUNDLED WITH
-   1.13.6
+   1.16.1
