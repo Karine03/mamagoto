@@ -9402,23 +9402,25 @@ html, body {
 
 /* line 11, /Users/karinebialobroda/code/Karine03/mamagoto/source/stylesheets/components/_map.scss */
 .map-container {
-  position: relative; }
+  position: relative;
+  height: 80vh;
+  background-size: cover; }
 
-/* line 16, /Users/karinebialobroda/code/Karine03/mamagoto/source/stylesheets/components/_map.scss */
+/* line 18, /Users/karinebialobroda/code/Karine03/mamagoto/source/stylesheets/components/_map.scss */
 .map-info h2, .contact-info h2 {
   font-family: "Proxima";
   font-size: 19px;
   margin-bottom: 0; }
-/* line 21, /Users/karinebialobroda/code/Karine03/mamagoto/source/stylesheets/components/_map.scss */
+/* line 23, /Users/karinebialobroda/code/Karine03/mamagoto/source/stylesheets/components/_map.scss */
 .map-info img, .contact-info img {
   width: 100px; }
 
-/* line 26, /Users/karinebialobroda/code/Karine03/mamagoto/source/stylesheets/components/_map.scss */
+/* line 28, /Users/karinebialobroda/code/Karine03/mamagoto/source/stylesheets/components/_map.scss */
 .contact-container {
   background: #eeeeee;
   padding: 20px 0; }
 
-/* line 30, /Users/karinebialobroda/code/Karine03/mamagoto/source/stylesheets/components/_map.scss */
+/* line 32, /Users/karinebialobroda/code/Karine03/mamagoto/source/stylesheets/components/_map.scss */
 .contact-info {
   padding: 20px 0;
   background: white;

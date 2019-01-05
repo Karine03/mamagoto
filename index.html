@@ -225,9 +225,7 @@
   </div>
 </div>
 
-<div class="map-container hidden-xs">
-  <div id="map" style="width: 100%; height: 80vh;">
-  </div>
+<div class="map-container hidden-xs" style="background-image: url( images/map.png ) ">
   <div class="map-info text-center">
     <img src="images/logo.svg" />
     <h2>Contact</h2>
@@ -263,27 +261,6 @@
   <p>©2016 MAMAGOTO · Design and web development by <a href="http://www.poulpe.co" target='_blank'>Poulpe</a></p>
 </div>
 
-
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCx3WH0kpKancawHg8STM60LCLwdo-VIqw"></script>
-
-<script type="text/javascript">
-  var myLatlng = new google.maps.LatLng(48.8771396,2.3544425000000047);
-
-  var myOptions = {
-    zoom: 16,
-    center: myLatlng,
-    scrollwheel: false,
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    styles: [{"featureType":"landscape","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"stylers":[{"hue":"#00aaff"},{"saturation":-100},{"gamma":2.15},{"lightness":12}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"lightness":24}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":57}]}] 
-  };
-
-  var map = new google.maps.Map(document.getElementById('map'), myOptions);
-  var marker = new google.maps.Marker({
-    position: myLatlng,
-    map: map,
-    title: "You are here!"
-  });
-</script>
 
 <!-- <div id="modal-event" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-imgLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
